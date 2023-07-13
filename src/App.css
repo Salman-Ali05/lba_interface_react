@@ -1,38 +1,137 @@
+/* APP */
+
+.accueilImg {
+  width: 110%;
+  position: absolute;
+  top: -20%;
+  left: -3%;
+  transform: translateY(-30%) translateX(-3%);
+  z-index: -1;
+}
+
 .App {
-  text-align: center;
+  margin-top: 45%;
+  padding: 25px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Accueil */
+.searchBar {
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* LeftMenu */
+
+.leftMenu {
+  position: relative;
+  width: 10rem;
+  left: 0;
+  padding-right: 2%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ProductsList */
+
+.cardProductContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.App-link {
-  color: #61dafb;
+.cardProduct {
+  border: 2px solid #212121;
+  height: auto;
+  padding: 10;
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px;
+  background-color: #EBEBEB;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.deleteIcon {
+  position: relative;
+  bottom: 50%;
+  left: 85%;
+}
+
+.editIcon {
+  position: relative;
+  bottom: 50%;
+  right: 0;
+}
+
+.deleteIcon:hover, .editIcon:hover {
+  cursor: pointer;
+}
+
+.filterButton {
+  width: 15rem;
+}
+
+/* Popup */
+
+.popup, .overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: rgba(49, 49, 49, 0.8);
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 40px;
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 300px;
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 1px 5px;
+}
+
+/* Create Update Form */
+
+.generalForm {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.generalInputs{
+  width: 100%;
+}
+
+/* Delete Form */
+
+.deleteForm {
+  text-align: center;
+  position: relative;
+}
+
+.deleteButton {
+  width: 5rem;
+  left: -30%;
+  top: 20px;
+}
+
+.noDeleteButton {
+  width: 5rem;
+  left: 30%;
+  top: 20px;
+}
+
+.inputs {
+  padding: 10px;
 }
