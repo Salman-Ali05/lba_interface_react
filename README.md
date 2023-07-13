@@ -7,6 +7,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 Before anything !
+This project runs with an other one : lba_serveur, you should clone this one first, launch it, then you can do the following commands, enjoy ;) !
+
 ### `npm install`
 
 ### `npm start`
